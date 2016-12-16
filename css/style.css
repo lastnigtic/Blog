@@ -1,0 +1,504 @@
+*{
+	padding:0;
+	margin:0;
+	font-family: sans-serif;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+body{
+	width:auto;
+}
+nav{
+	position:fixed;
+	width:100%;
+	background-color:rgba(0,0,0,0.6);
+	height:50px;
+	z-index:10;
+}
+nav ul li,nav li.log{
+	display:inline-block;
+	line-height:50px;
+	margin-right:10px;
+}
+nav li.log a,nav ul li a{
+	text-decoration:none;
+	color:white;
+	cursor:pointer;
+}
+nav li.log{
+     float:left;
+	 font-size: 25px;
+     padding-left: 50px;
+	 letter-spacing:1px;
+}
+nav ul{
+	float:right;
+}
+header{
+	background-image:url(../image/banner.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.sidebar_menu{
+	cursor:pointer;
+}
+#banner div.hr{
+	background-color:white;
+	width:250px;
+	margin:0 auto;
+}
+#banner{
+	height:720px;
+	background:rgba(0,0,0,0.4);
+}
+div.inner{
+	position:absolute;
+	margin:0 auto;
+	text-align:center;
+	top:50%;
+	left:50%;
+	margin-left:-250px;
+	margin-top:-100px;
+	width:500px;
+	height:200px;
+	color:white;
+}
+div.inner h1{
+	position:retalive;
+	margin:auto 0;
+	line-height:60px;
+}
+div.inner p{
+	padding-top:30px;
+}
+
+/*音乐部分*/
+div.bg_m{
+	width:50px;
+	height:50px;
+}
+div.cd{
+	background-image:url(../image/cd.png);
+	background-size:100%;
+	position:fixed;
+	width:40px;
+	height:40px;
+	top:5px;
+	left:200px;
+	z-index:10;
+	cursor:pointer;
+	display:block;
+}
+div.shadow{
+	background:rgba(0,0,0,0);
+	width:50px;
+	height:50px;
+	margin-top: -5px;
+    margin-left: -5px;
+	border-radius:100%;
+}
+div.shadow:hover{
+	background:rgba(0,0,0,0.7);
+}
+
+div .bg_music{
+	cursor:pointer;
+	position:absolute;
+	width:220px;
+	height:150px;
+	margin-top: -150px;
+    margin-left: 195px;
+	background:rgba(0,0,0,0.7);
+}
+div.bg_m:hover .bg_music{
+	margin-top:50px;
+}
+div.bg_music li{
+	width:100%;
+}
+div.bg_music li a{
+	text-decoration:none;
+	padding-left:10px;
+}
+div.bg_music li:hover{
+	background:#444;
+	width:100%;
+}
+
+
+#run{
+	-webkit-animation:music_disc 0.5s linear infinite;
+	    -ms-animation:music_disc 0.5s linear infinite;
+	        animation:music_disc 0.5s linear infinite;
+}
+@-webkit-keyframes music_disc{
+	0%{
+		-webkit-transform:rotate(0deg);
+		    -ms-transform:rotate(0deg);
+		        transform:rotate(0deg);
+	}
+	100%{
+		-webkit-transform:rotate(360deg);
+		    -ms-transform:rotate(360deg);
+		        transform:rotate(360deg);
+	}
+}
+@-ms-keyframes music_disc{
+	0%{
+		-webkit-transform:rotate(0deg);
+		    -ms-transform:rotate(0deg);
+		        transform:rotate(0deg);
+	}
+	100%{
+		-webkit-transform:rotate(360deg);
+		    -ms-transform:rotate(360deg);
+		        transform:rotate(360deg);
+	}
+}
+@keyframes music_disc{
+	0%{
+		-webkit-transform:rotate(0deg);
+		    -ms-transform:rotate(0deg);
+		        transform:rotate(0deg);
+	}
+	100%{
+		-webkit-transform:rotate(360deg);
+		    -ms-transform:rotate(360deg);
+		        transform:rotate(360deg);
+	}
+}
+/*音乐部分结束*/
+button{
+	top: 150px;
+    left: 205px;
+    position: absolute;
+	background:#222;
+	color:#FFF;
+	margin-top:10px;
+	padding:10px 20px;
+	border-radius:10px;
+	outline:none;
+}
+div.more{
+	position:absolute;
+	top:340px;
+	width:50px;
+	left:50%;
+	margin-left:-25px;
+	text-align:center;
+}
+div.more:hover{
+	-webkit-animation:upper 0.5s linear 1;
+	animation:upper 0.5s linear 1;
+}
+@-webkit-keyframes upper{
+	0%{
+		-webkit-transform:translate(0,0);
+		transform:translate(0,0);
+	}
+	75%{
+		-webkit-transform:translate(0,-50px);
+		transform:translate(0,-50px);
+	}
+	100%{
+		-webkit-transform:translate(0,0);
+		transform:translate(0,0);
+	}
+	
+}
+img.down{
+	width:20px;
+	height:auto;
+	margin-top:50px;
+}
+
+#back{
+	background-image:url(../image/back.png);
+	background-size:100%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+	bottom: 20px;
+    right: 20px;
+	cursor:pointer;
+	z-index:10;
+	display:none;
+}
+/*标题结束*/
+
+.hr{
+	width:400px;
+	height:2px;
+	margin:10px auto;
+}
+.artist{
+	padding-left:150px;
+	line-height:10px;
+}
+.green-section{
+	background-image:url(../image/xuzhian.jpg);
+	background-repeat:no-repeat;
+	background-position:left;
+	background-size:auto 600px;
+	background-color:#f5cc96;
+	height:600px;
+	width:100%;
+	color:white;
+	text-align:center;
+}
+.green-section.wrapper{
+	height:600px;
+}
+.green-section div.song{
+	width:400px;
+	float:right;
+}
+.green-section h2{
+	line-height:20px;
+	padding-top:100px;
+}
+.green-section p{
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	line-height:25px;
+}
+.green-section .hr{
+	background:#078494;
+}	
+.green-section div.comment{
+	height:600px;
+}
+.green-section div.comment p{
+	line-height:30px;
+	font-family: "楷体","楷体_GB2312";  
+	font-size:25px;
+}
+
+.green-section div#green-play{
+	background-image:url(../image/play.png);
+	background-repeat:no-repeat;
+	background-size:50px auto;
+	margin:250px 800px;
+	width:50px;
+	height:50px;
+	position:absolute;
+	cursor:pointer;
+}
+.green-section div#green-play:hover{
+	background-size:45px auto;
+}
+.green-section div.comment div#first{
+	width:30px;
+	position:absolute;
+	margin-top:-120px;
+	margin-left:-150px;
+}
+.green-section div.comment div#second{
+	width:30px;
+	margin-top:-150px;
+	margin-left:150px;
+	position:absolute;
+}
+.green-section div.rylic_bg{
+	background-image:url(../image/rylic_bg.jpg);
+	background-size:auto 600px;
+	background-position:right;
+	background-repeat:no-repeat;
+	height:600px;
+	position:absolute;
+}
+/*green-section结束*/
+.grey-section{
+	background:grey;
+	color:white;
+}
+.grey-section .clannad{
+	font-size:0;
+}
+.grey-section .clannad:nth-child(odd){
+	background-color:rgba(255,255,255,0.08);
+}
+.grey-section .clannad >div{
+	float:left;
+}
+.grey-section .clannad:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.grey-section div.img-cl{
+	width:45%;
+	height:auto;
+}
+.grey-section div.article{
+	width:55%;
+}
+.grey-section div.img-cl img{
+	width:100%;
+}
+.grey-section div.article .title{
+	width:200px;
+	text-align:center;
+	padding-top:130px;
+	float:left;
+}
+.grey-section div.article h2{
+	padding-bottom:10px
+	font-family: "楷体","楷体_GB2312";  
+	font-size:35px;
+}
+.grey-section div.article h4{
+	font-size:15px;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+.grey-section div.article-p{
+	float:right;
+	width:670px;
+	font-size:10px;
+	margin-top:135px;
+	letter-spacing:1px;
+	font: 18px/1.5 "PingFang SC",Helvetica,"Helvetica Neue","微软雅黑",Tahoma,Arial,sans-serif;
+	max-width:80%;
+}
+.grey-section div.xi{
+	margin-top:115px;
+}
+/*grey-section结束*/
+.purple-section{
+	background:rgb(160,60,160);
+	height:1020px;
+	background-image:url(../image/basket.png);
+	background-repeat:no-repeat;
+	background-size:22%;
+	background-position:bottom right;
+}
+.purple-section div.wrapper{
+	width:1080px;
+	margin:0 auto;
+	text-align:center;
+}
+.purple-section div.wrapper:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.purple-section div.title{
+	padding-top:80px;
+}
+.purple-section h3{
+	line-height:60px;
+}
+.purple-section div.hr{
+	background:rgb(99,26,99);
+}
+.purple-section div.card-group{
+	margin-top:50px;
+}
+.purple-section div.card{
+	width:500px;
+	float:left;
+	min-height:380px;
+	padding:80px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	text-align:center;
+}
+.purple-section div.card p{
+	text-align:center;
+}
+.purple-section div.card-group>.card:nth-child(1){
+	background:rgba(0,0,0,0.04);
+	background-image:url(../image/lakers.png);
+	background-size:80px auto;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+}
+.purple-section div.card-group>.card:nth-child(2){
+	background:rgba(0,0,0,0.08);
+	background-image:url(../image/76.png);
+	background-size:80px auto;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+}
+.purple-section div.card-group>.card:nth-child(3){
+	background:rgba(0,0,0,0.08);
+	background-image:url(../image/dragon.png);
+	background-size:80px auto;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+}
+.purple-section div.card-group>.card:nth-child(4){
+	background:rgba(0,0,0,0.04);
+	background-image:url(../image/xiaoniu.png);
+	background-size:auto 80px;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+}
+
+/*purple-section结束*/
+footer{
+	min-height:200px;
+	text-align:center;
+	margin:0 auto;
+	background-image:url(../image/footer.jpg);
+	background-position:50% 85%;
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.share-group{
+	display:block;
+	margin:0 auto;
+	padding:50px;
+	background-color:rgba(0,0,0,0.3);
+}
+.share-group li{
+	display:inline-block;
+	padding:10px;
+}
+.share-group img{
+	width:20px;
+	height:auto;
+}
+footer .copy{
+	height:60px;
+	background-color:rgba(145,152,154,0.8);
+}
+footer .copy p{
+	letter-spacing:1px;
+	padding-top:20px;
+}
+/*侧边栏*/
+.mask{
+	position:fixed;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background:rgba(0,0,0,0.6);
+	display:none;
+}
+.sidebar{
+     position:fixed;
+	 top:0;
+	 bottom:0;
+     right:-300px;
+     width:300px;
+     background:#333;
+     color:#FFF;
+	 padding:20px 0;
+	 transition:right 0.3s;
+}
+.sidebar ul{
+	list-style:none;
+	padding-top:60px;
+	cursor:pointer;
+}
+.sidebar li a{
+	text-decoration:none;
+	padding:10px 30px;
+	width:100%;
+	display:inline-block;
+	color:white;
+}
+.sidebar li a:hover{
+	background:#444;
+}
